@@ -57,3 +57,12 @@ buttonContainer.addEventListener('click', (event) => {
     delegationMessage.textContent = `You clicked ${event.target.textContent}.`;
   }
 });
+
+const clearInputsBtn = document.getElementById("clearInputsBtn");
+
+clearInputsBtn.addEventListener("click", function () {
+  keyboardInput.value = "";
+  nameInput.value = "";
+  focusInput.value = "";
+  charCount.textContent = "Character count: 0";
+});

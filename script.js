@@ -20,16 +20,21 @@ const demoForm = document.getElementById('demoForm');
 const nameInput = document.getElementById('nameInput');
 const formMessage = document.getElementById('formMessage');
 
-demoForm.addEventListener('submit', (event) => {
+demoForm.addEventListener("submit", function (event) {
   event.preventDefault();
+
   const name = nameInput.value.trim();
 
-  if (name === '') {
-    formMessage.textContent = 'Please enter your name before submitting.';
+  formMessage.classList.remove("success", "error");
+
+  if (name === "") {
+    formMessage.textContent = "Please enter your name before submitting.";
+    formMessage.classList.add("error");
     return;
   }
 
   formMessage.textContent = `Form submitted successfully. Hello, ${name}!`;
+  formMessage.classList.add("success");
   demoForm.reset();
 });
 

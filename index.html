@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JavaScript Events</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Mouse Events</h2>
+      <button id="hoverBtn">Hover over this button</button>
+      <p id="mouseMessage">Move your mouse over the button to see a message.</p>
+    </section>
+
+    <section class="card">
+      <h2>Keyboard Events</h2>
+      <label for="keyboardInput">Type in the input:</label>
+      <input type="text" id="keyboardInput" placeholder="Press any key" />
+      <p id="keyboardMessage">Last key pressed: None</p>
+    </section>
+
+    <section class="card">
+      <h2>Form Events</h2>
+      <form id="demoForm">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name" required />
+        <button type="submit">Submit Form</button>
+      </form>
+      <p id="formMessage">Submit the form to see the result here.</p>
+    </section>
+
+    <section class="card">
+      <h2>Focus and Blur Events</h2>
+      <label for="focusInput">Focus field:</label>
+      <input type="text" id="focusInput" placeholder="Click here, then click away" />
+      <p id="focusMessage">This field has not been focused yet.</p>
+    </section>
+
+    <section class="card">
+      <h2>Event Delegation</h2>
+      <div id="buttonContainer" class="button-group">
+        <button type="button">Button 1</button>
+        <button type="button">Button 2</button>
+        <button type="button">Button 3</button>
+        <button type="button">Button 4</button>
+      </div>
+      <p id="delegationMessage">Click any button in the container.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
